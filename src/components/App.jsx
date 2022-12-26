@@ -43,7 +43,7 @@ export const App = () => {
     <Box display="flex" flexDirection="column" alignItems="center">
       <Section title="Please leave feedback">
         <FeedbackOptions
-          options={["good", "neutral", "bad"]}
+          options={Object.keys({ good, neutral, bad })}
           onLeaveFeedback={onCountFeedback}
         />
       </Section>
